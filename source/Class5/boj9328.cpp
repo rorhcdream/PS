@@ -10,8 +10,8 @@
 using namespace std;
 
 int t, h, w;
-char map[100][100];
-int moved[100][100];
+char map[101][101];
+int moved[101][101];
 int document;
 vector<int> keys;
 
@@ -112,7 +112,7 @@ int main(void)
 				gotnewkey |= move(i, 0);
 				gotnewkey |= move(i, w-1);
 			}
-		}while(gotnewkey == true);
+		}while(gotnewkey);
 
 		cout << document << endl;
 	}
